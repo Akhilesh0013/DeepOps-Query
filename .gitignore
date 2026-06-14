@@ -1,0 +1,118 @@
+# =============================================================================
+# Enterprise Advanced RAG — .gitignore
+# =============================================================================
+
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Virtual environments ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- uv (keep uv.lock committed) ---
+.uv/
+
+# --- Test / lint / type-check caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- ML / model caches (downloaded at runtime) ---
+.cache/
+.huggingface/
+transformers_cache/
+torch_cache/
+*.onnx
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# --- Document corpus (~600+ MB) — regenerate with: make seed-data ---
+seed/docs/noisy_data/*
+!seed/docs/noisy_data/.gitkeep
+seed/docs/true_data/*
+!seed/docs/true_data/.gitkeep
+
+# --- Eval artifacts (generated) ---
+eval/results/
+
+# --- Docker / local runtime ---
+docker-compose.override.yml
+.docker/
+
+# --- Logs & temp files ---
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- IDE / editors ---
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.cursor/
+*.code-workspace
+
+# --- Streamlit ---
+.streamlit/secrets.toml
