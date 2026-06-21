@@ -59,6 +59,9 @@ eval-crag:
 eval-all:
 	uv run python -m eval.run_ragas --profile all
 
+eval-charts:
+	uv run python -m eval.generate_charts
+
 eval: eval-baseline eval-all
 	$(MAKE) eval-diff
 
