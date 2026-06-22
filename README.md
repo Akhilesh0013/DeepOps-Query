@@ -4,6 +4,8 @@ DeepOps query is a  Kubernetes operations assistant built for platform teams.
 
 Most RAG prototypes work beautifully on clean questions and curated PDFs. Real platform engineers don't ask clean questions. They ask "why is my app crash-looping?" not "explain CrashLoopBackOff." They want the pod count from yesterday's incident table, not a paragraph from the docs. Sometimes they ask about a tool that isn't in your corpus at all. DeepOps-Query is built for that.
 
+**▶ [Watch the demo](https://drive.google.com/file/d/191VEjHzvVd-c4xkl6TcPb1xv-ObCDObE/view?usp=sharing)** : walkthrough of the Streamlit UI, retrieval toggles, Text2SQL approval flow, and eval dashboard.
+
 ---
 
 ## What It Does
